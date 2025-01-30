@@ -1,6 +1,6 @@
 # Bases de Datos I
 
-**Semestre:** 2024-B
+**Semestre:** 2025-A
 
 ## Horario
 
