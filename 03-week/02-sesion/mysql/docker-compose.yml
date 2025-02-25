@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: serve-mysql-v3
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3308:3306"
+    networks:
+      - network_local_server
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - "/home/ubuntu/db_backups:/backups/mysql"
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    labels:
+      - com.corhuila.group=databases
+volumes:
+  mysql_data:
+    driver: local
+networks:
+  network_local_server:
+    driver: bridge
+    name: network_local_server

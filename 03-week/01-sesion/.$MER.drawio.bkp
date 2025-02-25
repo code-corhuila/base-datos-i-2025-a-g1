@@ -156,9 +156,6 @@
         <mxCell id="Vyve69rdpSh3tT56nk27-50" value="1-n" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="210" y="145" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vyve69rdpSh3tT56nk27-51" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="440" width="60" height="30" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
