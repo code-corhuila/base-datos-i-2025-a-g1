@@ -1,0 +1,33 @@
+-- DDL Definition Data Language
+
+-- Crate database
+CREATE DATABASE IF NOT EXISTS `ubication-db`;
+
+-- DELETE database id exists
+-- DROP DATABASE IF EXISTS `ubication-db`;
+
+-- Create table
+/*CREATE TABLE IF NOT EXISTS `ubication-db`.`country`(
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `code` VARCHAR(5) NOT NULL,
+    `name` VARCHAR(50) NOT NULL,
+    `description` TEXT,
+    `status` BOOLEAN NOT NULL DEFAULT 1,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `deleted_at` TIMESTAMP
+);*/
+
+-- USER DATABASE
+use `ubication-db`;
+
+CREATE TABLE IF NOT EXISTS country(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    code VARCHAR(5) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    description TEXT,
+    status BOOLEAN NOT NULL DEFAULT 1,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    deleted_at TIMESTAMP
+);
