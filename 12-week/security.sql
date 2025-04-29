@@ -5,4 +5,12 @@
 -- ** Update usuario set deleted_at = now() where id = 1; **
 
 -- Campos de auditoria
--- ** status, created_at, updated_at, deleted_at, created_by, updated_by, deleted_by **
+-- ** 
+-- status boolean - byte
+-- created_at timestamp
+-- updated_at timestamp
+-- deleted_at timestamp
+-- created_by int
+-- updated_by int
+-- deleted_by int
+-- **
